@@ -168,7 +168,7 @@ footer div i:active{
 }
 }
 /*--------------------------------------------Media querys----------------------------------------------------*/
-@media (max-width: 530px){
+@media (max-width: 530px) and (orientation: portrait){
     body{
         background-color:rgb(37, 37, 37) ;
         display: flex;
