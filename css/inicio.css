@@ -24,6 +24,8 @@ header{
 header i{
     font-size: 35px;
     color: #DD1C1A;
+    border: #DD1C1A solid ;
+    border-radius: 10px;
 }
 
 header ul{
@@ -42,9 +44,9 @@ header ul a{
 }
 
 main{
-    height: 750px;
-    background-image: url("../resources/background.png");
+    height: 950px;
     background-size: cover;
+    background: linear-gradient(to bottom, rgb(0 0 0/.5), rgb(0 0 0/.5)), url("../resources/background.png");
 }
 
 main section{
@@ -94,7 +96,7 @@ main div button{
 
 footer{
     background-color:rgb(37, 37, 37) ;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +109,16 @@ footer div{
 }
 
 footer div i{
+    border: #DD1C1A solid ;
+    border-radius: 10px;
     color: #DD1C1A;
+}
+
+header i:hover{
+    border: #DD1C1A solid ;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
 }
 
 header ul li:visited{
@@ -116,6 +127,7 @@ header ul li:visited{
 
 main div button:hover{
     cursor: pointer;
+    background-color: #bb1512;
 }
 
 main div button:active{
@@ -126,10 +138,22 @@ main div button:active{
 header ul a:hover{
     display: inline-block;
     color: #DD1C1A;
-    font-size: 30px;
-    transition: 0.5s;
+    font-size: 25px;
+    transition: 0.3s;
 }
 
 header ul a:active{
     text-decoration: underline;
+}
+
+footer div i:hover{
+    font-size: 45px;
+    transition: .3s;
+    background-color: white;
+}
+
+footer div i:active{
+    font-size: 50px;
+    transition: .3s;
+    outline: 4px #DD1C1A solid;
 }
