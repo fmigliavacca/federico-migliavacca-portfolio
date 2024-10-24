@@ -7,7 +7,9 @@
 
 @media  (min-width: 1000px){
 
-
+.hamburguesa{
+    display: none !important;
+}
 
 body{
     display: flex;
@@ -21,12 +23,12 @@ header{
     height: 120px;
     background-attachment: fixed;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 header i{
-    font-size: 35px;
+    font-size: 45px;
     color: #DD1C1A;
     border: #DD1C1A solid ;
     border-radius: 10px;
@@ -40,7 +42,7 @@ header ul{
     align-items: center;
     gap: 50px;
     list-style: none;
-    font-size: 25px;
+    font-size: 35px;
     margin-right: 50px;
 }
 
@@ -147,7 +149,7 @@ main div button:active{
 header ul a:hover{
     display: inline-block;
     color: #DD1C1A;
-    font-size: 25px;
+    font-size: 40px;
     transition: 0.3s;
 }
 
@@ -168,7 +170,7 @@ footer div i:active{
 }
 }
 /*--------------------------------------------Media querys----------------------------------------------------*/
-@media (max-width: 530px) and (orientation: portrait){
+@media (max-width: 700px) and (orientation: portrait){
     body{
         background-color:rgb(37, 37, 37) ;
         display: flex;
@@ -178,43 +180,33 @@ footer div i:active{
     }
 
     header{
-        display: flex;
-        height: 40px;
-        background-attachment: fixed;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        height: 50px;
     }
 
+
     header i{
-        visibility: hidden;
+        display: none;
+    }
+
+    .hamburguesa{
+        display: flex;
+        font-size: 50px;
+        visibility: visible;
+        color:#DD1C1A;
     }
 
     header ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        font-size: 20px;
-        margin-right: 50px;
-        gap: 10px;
+        display: none
     }
-    
-    header ul a{
-        text-decoration: none;
-        color: #FFF1D0;
-    }
-
 
     main{
-        height: 100vh;
+        height: 900px;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background: linear-gradient(to bottom, rgb(0 0 0/.5), rgb(0 0 0/.5)), url("../resources/background.png");
         background-position:center center;
-        width: 100vw;
+        width: 500px;
     }
 
     main section{
@@ -234,8 +226,8 @@ footer div i:active{
     }
     
     main div{
+        text-align: center;
         margin-top: 0px;  
-        margin-left: 30px;
     }
     
     main div p{
