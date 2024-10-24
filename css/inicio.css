@@ -168,7 +168,7 @@ footer div i:active{
 }
 }
 /*--------------------------------------------Media querys----------------------------------------------------*/
-@media (max-width: 430px){
+@media (max-width: 530px){
     body{
         background-color:rgb(37, 37, 37) ;
         display: flex;
