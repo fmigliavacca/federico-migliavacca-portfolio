@@ -12,9 +12,9 @@ body{
 }
 
 header{
-    background-color:#06AED5 ;
+    background-color:rgb(37, 37, 37) ;
     display: flex;
-    height: 50px;
+    height: 70px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,7 @@ header{
 
 header i{
     font-size: 35px;
+    color: #DD1C1A;
 }
 
 header ul{
@@ -37,11 +38,13 @@ header ul{
 
 header ul a{
     text-decoration: none;
+    color: #FFF1D0;
 }
 
 main{
     height: 750px;
-    background-color: #086788;
+    background-image: url("../resources/background.png");
+    background-size: cover;
 }
 
 main section{
@@ -90,7 +93,7 @@ main div button{
 }
 
 footer{
-    background-color: #06AED5;
+    background-color:rgb(37, 37, 37) ;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -101,4 +104,32 @@ footer{
 footer div{
     display: flex;
     gap: 100px;
+}
+
+footer div i{
+    color: #DD1C1A;
+}
+
+header ul li:visited{
+    color: black;
+}
+
+main div button:hover{
+    cursor: pointer;
+}
+
+main div button:active{
+    border:solid 2px #FFF1D0;
+    border-radius: 5px;
+}
+
+header ul a:hover{
+    display: inline-block;
+    color: #DD1C1A;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+header ul a:active{
+    text-decoration: underline;
 }
