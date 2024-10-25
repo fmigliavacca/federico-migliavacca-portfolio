@@ -46,6 +46,7 @@ header ul{
     margin-right: 50px;
 }
 
+
 header ul a{
     text-decoration: none;
     color: #FFF1D0;
@@ -149,7 +150,6 @@ main div button:active{
 header ul a:hover{
     display: inline-block;
     color: #DD1C1A;
-    font-size: 40px;
     transition: 0.3s;
 }
 
@@ -169,7 +169,7 @@ footer div i:active{
     outline: 4px #DD1C1A solid;
 }
 }
-/*--------------------------------------------Media querys----------------------------------------------------*/
+/*-----------------------------------------------------------Media querys-------------------------------------------------------------------------*/
 @media (max-width: 700px) and (orientation: portrait){
     body{
         background-color:rgb(37, 37, 37) ;
