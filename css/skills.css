@@ -158,6 +158,11 @@
         color: #FFF1D0;
     }
 
+    .seccion-tools section div .boots{
+        font-size: 50px;
+        color: #FFF1D0;
+    }
+
     footer{
         background-attachment: fixed;
         height: 80px;
