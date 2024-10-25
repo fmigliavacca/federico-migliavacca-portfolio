@@ -118,6 +118,7 @@ footer{
 footer div{
     display: flex;
     gap: 100px;
+    margin: 50px;
 }
 
 footer div i{
