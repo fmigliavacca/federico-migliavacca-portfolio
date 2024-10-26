@@ -67,22 +67,89 @@
 
 
 
-    main h1{
+    main section h1{
         color:#DD1C1A;
         font-size: 90px;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     main section{
-        margin: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    section h2{
-        color:#FFF1D0;
-        font-size: 35px;
-        word-spacing: 7px;
+    main section form{
+        background-color: rgb(37, 37, 37);       
+        border: #970d0d solid 2px;
+        border-radius: 10px;
+        width: 800px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        gap: 20px;
     }
+
+    main section form h2{
+        font-size: 50px;
+        color: #DD1C1A;
+        margin: 30px;
+    }
+
+    main section form section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    main section form section div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:baseline;
+        gap: 10px;
+    }
+
+    main section form section div input{
+        width: 600px;
+        height: 20px;
+        background-color: #970d0d;
+        background-color: #FFF1D0;
+    }
+
+    main section form section div textarea{
+        width: 600px;
+        height: 200px;
+        background-color: rgb(37, 37, 37);
+        border: solid 2px #970d0d;
+        border-radius: 10px;
+        color: #FFF1D0;
+    
+    }
+
+    main section form section div label{
+        color:#FFF1D0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .but{
+        width: 100px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: rgb(37, 37, 37);
+        border: #970d0d solid 2px;
+        color: #DD1C1A;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
 
     footer{
         background-attachment: fixed;
@@ -125,12 +192,6 @@
     header ul a:active{
         text-decoration: underline;
     }
-
-    main section div:hover{
-        transform: scale(1.15);
-        transition: .3s;
-    }
-
 
     
     footer div i:hover{

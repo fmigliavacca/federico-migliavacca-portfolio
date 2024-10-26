@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="icon" href="../resources/d808e7c9dbff928491e9cdb9dae9cbbf/16x16.png">
-    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
 </head>
 <body>
-    
+    <header>
+        <div><i class="las la-bars hamburguesa"></i></div>
+        <i class="las la-moon"></i>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Contact</h1>
+            <form action="Send-email">
+                <h2>Send me an email!</h2>
+                <section>
+                    <div>
+                        <label for="subject"> Subject </label>
+                        <input type="text" name="subject" id="subject" placeholder="Write here the subject">
+                    </div>
+                    <div class = "comment">
+                        <label for="content">Content</label>
+                        <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Write here the content"></textarea>
+                        <input type="submit" value="Send" class="but">
+                    </div>
+                </section>
+            </form>
+       </section>
+
+    </main>
+    <footer>
+        <div>
+        <a href="https://www.linkedin.com/in/federico-migliavacca-689355243/"><i class="lab la-linkedin-in"></i></a>
+        <a href="https://github.com/fmigliavacca"><i class="lab la-github"></i></a>
+        </div>
+    </footer>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
