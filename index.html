@@ -4,39 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="resources/d808e7c9dbff928491e9cdb9dae9cbbf/16x16.png">
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
 <body>
-    <header>
-        <div><i class="las la-bars hamburguesa"></i></div>
-        <i class="las la-moon"></i>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html/about.html">About</a></li>
-            <li><a href="html/skills.html">Skills</a></li>
-            <li><a href="html/projects.html">Projects</a></li>
-            <li><a href="html/contact.html">Contact</a></li>
-        </ul>
-    </header>
-    <main>
-        <section>
-            <div>
-                <p class = "inline">Hi,</p>
-                <p class="inline">I´m <h1>Federico</h1></p>
-                <p>Full Stack Developer</p>
-                <button onclick="window.location.href='html/contact.html'">Contact</button>
+    <header class="header flex row" style="justify-content: center; align-items: center;">
+        <div class="header-nav" style="font-size: 13px;">
+            
+            <div class="">
+                <a href="" class="text bold">Experience</a>
             </div>
-            <img src="resources/avatar.png" alt="avatar">
+            <div>
+                <a href="" class="text bold">Projects</a>
+            </div>
+            <div>
+                <a href="" class="text bold">Stack</a>
+            </div>
+            <div class=>
+                <a href="" class="text bold">About</a>
+            </div>
+            <div>
+                <a href="" class="text bold">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main class="main flex column" style="justify-content: start; align-items:start;">
+        <section class="inicio flex column" style="justify-content: center; align-items: start; gap: 0px;">
+            <div class="flex row" style="justify-content: center; align-items: center; gap: 30px;">
+                <img src="resources/avatar.png" alt="" style="height: auto; width: 100px;">
+                <button class="text" style="width: 150px; height: 30px; font-size: 20px; background-color: rgb(37,37,37); border: #DD1C1A solid 2px; border-radius: 6px;">
+                    Ready to work
+                </button>
+            </div>
+            <div>
+                <h1 class="bold text" style="font-size: 50px; margin-bottom: 0px;">Hi, I'm <strong style="color: #DD1C1A;">Federico</strong></h1>
+                <div class="text" style="font-size: 20px;">
+                    <p>+2 years of experience. <strong style="color: #DD1C1A;">Systems Engineer and Full Stack Developer</strong></p>
+                    <p>From Buenos Aires, Argentina <img width="20" height="20" src="https://img.icons8.com/color/48/argentina.png" alt="argentina"/></p>
+                </div>
+            </div>
+            <div class="flex row" style="gap: 40px;">
+                <button class="flex row text" style="justify-content: center; align-items: center; width: 120px; height: 30px; gap: 8px; font-size: 20px; background-color: rgb(37,37,37);border: #DD1C1A solid 2px; border-radius: 6px;" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                      </svg>
+                    Contact                      
+                </button>
+                <button class="flex row text" style="justify-content: center; align-items: center; width: 120px; height: 30px; font-size: 20px; gap: 8px; background-color: rgb(37,37,37); border: #DD1C1A solid 2px; border-radius: 6px;" >
+                    <i class="devicon-linkedin-plain"></i> Linkedin
+                </button>
+            </div>
         </section>
+        <section class="Experience">
+
+        </section>
+        <section class="Projects">
+
+        </section>
+        <section class="Stack">
+
+        </section>
+        <section class="About">
+
+        </section>
+        <section class="Contact">
+
+        </section>
+
     </main>
-    <footer>
+    <footer class="footer">
         <div>
-        <a href="https://www.linkedin.com/in/federico-migliavacca-689355243/"><i class="lab la-linkedin-in"></i></a>
-        <a href="https://github.com/fmigliavacca"><i class="lab la-github"></i></a>
+            <i class="devicon-github-original"></i>
+        </div>
+        <div>
+            <i class="devicon-linkedin-plain"></i>
         </div>
     </footer>
-    <script src="javascript/main.js"></script>
 </body>
 </html>
