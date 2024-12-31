@@ -74,3 +74,12 @@ body{
                 0 0 30px #9b0f0d,
                 inset 0 0 10px #9b0f0d;
 }
+
+.difuminado {
+    background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Difumina el fondo detrás del elemento */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
