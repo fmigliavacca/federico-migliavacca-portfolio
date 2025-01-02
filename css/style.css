@@ -84,3 +84,12 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     color: #333;
 }
+
+.Projects h4:hover{
+    color: gray;
+}
+
+.black-text{
+    color: black;
+}
+
