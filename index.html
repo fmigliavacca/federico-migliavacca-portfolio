@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="resources/d808e7c9dbff928491e9cdb9dae9cbbf/16x16.png">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <script>
+        function openGmail() {
+          const email = "federicomigliavaccait@gmail.com";
+          const subject = "Hello";
+          const body = "Hi Federico,\n\nWrite your message here.";
+          const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.open(gmailUrl, "_blank"); // Abre Gmail en una nueva pestaña
+        }
+    </script>
 </head>
+
 <body>
-    <header class="header flex row" style="justify-content: center; align-items: center;">
-        <div class="header-nav" style="font-size: 1.3vh;">
+    <header class="header flex row" style="justify-content: center; align-items: center; position: fixed;">
+        <div class="header-nav" style="font-size: 0.75vw;">
             
             <div class="">
                 <a href="" class="text bold">Experience</a>
@@ -26,11 +35,11 @@
                 <a href="" class="text bold">About</a>
             </div>
             <div>
-                <a href="" class="text bold">Contact</a>
+                <a class="text bold">Contact</a>
             </div>
         </div>
     </header>
-    <main class="main flex column" style="justify-content: start; align-items:start; gap: 50px;">
+    <main class="main flex column" style="justify-content: start; align-items:start; gap: 100px;">
         <section class="inicio flex column" style="justify-content: center; align-items: start; gap: 0px;">
             <div class="flex row" style="justify-content: center; align-items: end; gap: 30px;">
                 <img src="resources/avatar.png" alt="" style="height: auto; width: 100px; border: #DD1C1A solid 3px ;border-radius: 60px; position: relative; top: 5px;">
@@ -45,7 +54,7 @@
                     <p>From Buenos Aires, Argentina <img width="20" height="20" src="https://img.icons8.com/color/48/argentina.png" alt="argentina"/></p>
                 </div>
             </div>
-            <div class="flex row" style="gap: 40px;">
+            <div onclick="openGmail()" class="flex row" style="gap: 40px;">
                 <button class="flex row text" style="justify-content: center; align-items: center; width: 120px; height: 30px; gap: 8px; font-size: 20px; background-color: rgb(37,37,37);border: #DD1C1A solid 2px; border-radius: 6px;" >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -67,39 +76,65 @@
 
                 </div>
                 <div>
-                    <div class="flex column" style="gap: 5px; padding: 0px; margin: 0px;">
+                    <div class="flex column bold" style="gap: 5px; padding: 0px; margin: 0px;">
                         <h3 style="padding: 0px; margin: 0px; font-size: 35px; color: #DD1C1A;">Full Stack Developer</h3>
                         <h4 style="padding: 0px; margin: 0px; font-size: 25px; color: black;">Dyna Group S.A.</h4>
                         <h5 style="padding: 0px; margin: 0px; font-size: 20px; color: white;">Dec 2024 - Present</h5>
                     </div>
                 </div>
-                <div style="width: 370px; color: black;">
+                <div class="bold" style="width: 370px; color: black;">
                     <p>I worked at a software development company, building earthquake geolocation systems, parking control solutions, and AI models for license plate detection. My role involved developing scalable, efficient code, integrating APIs, and working on the frontend to create intuitive user interfaces, while collaborating with cross-functional teams to deliver innovative, real-time solutions.</p>
                 </div>
             </div>
         </section>
         <section class="Projects">
-                
+            <h2 style="color: white; font-size: 40px;">Projects</h2>
+            <div>
+                <div class="flex column" style="height: 60vh; width: 70vw; background-color: rgb(37,37,37); border: solid 3px #DD1C1A; border-radius: 10px; justify-content: start; align-items: start; padding: 40px; gap: 30px;">
+                    <h3 class="bold" style="font-size: 30px; color: white; margin: 0px;">Operating System Emulator in C Language</h3>
+                    <div class= "flex row" style="gap: 50px; justify-content: center; align-items: start;">
+                        <div class="carousel flex column" style="justify-content: center; align-items: center; gap: 30px;">
+                            <img style="height: 350px; width: auto; border: #DD1C1A solid 3px; border-radius: 10px;" src="resources/so2.jpeg" alt="so-img">
+                            <div class="pagination flex row" style="justify-content: space-between; border: white solid 1px; border-radius: 10px; background-color: #DD1C1A; width: 120px; height: 20px; gap: 10px; padding: 10px;">
+                                <h4 class="text" style="margin: 0px;">1</h4>
+                                <h4 class="text" style="margin: 0px; ">2</h4>
+                                <h4 class="text" style="margin: 0px;">3</h4>
+                            </div>
+                        </div>
+                        <div class="flex column" style="gap: 7px;">
+                            <p class="text" style="margin: 0px; font-size: 18px;">I developed an Operating System Emulator using the C programming language. The emulator is organized into four functional modules, each designed to simulate critical aspects of an operating system:</p>
+                            <p class="text" style="margin: 0px; font-size: 18px;">Input/Output Components: This module handles the simulation of input and output devices, including user interaction and data flow between the system and external peripherals.</p>
+                            <p class="text" style="margin: 0px; font-size: 18px;">CPU: The CPU module emulates the processing unit, managing the execution of instructions, handling task switching, and ensuring efficient computation.</p>
+                            <p class="text" style="margin: 0px; font-size: 18px;">Kernel: Serving as the core of the emulator, the kernel manages system resources, schedules processes, and oversees communication between modules to maintain seamless operation.</p>
+                            <p class="text" style="margin: 0px; font-size: 18px;">Memory Management: This module is responsible for simulating memory allocation, deallocation, and ensuring optimized access to memory resources for running processes.</p>
+                            <p class="text" style="margin: 0px; font-size: 18px;">The project aims to provide a deeper understanding of operating system principles through a practical, modular approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </section>
         <section class="Stack">
+            <h2 style="color: white; font-size: 40px;">Stack</h2>
+
 
         </section>
         <section class="About">
+            <h2 style="color: white; font-size: 40px;">About</h2>
+
 
         </section>
         <section class="Contact">
+            <h2 style="color: white; font-size: 40px;">Contact</h2>
+
 
         </section>
 
     </main>
-    <footer class="footer">
-        <div>
-            <i class="devicon-github-original"></i>
-        </div>
-        <div>
-            <i class="devicon-linkedin-plain"></i>
-        </div>
+    <footer class="footer flex row" style="justify-content: center; align-items: center; gap: 2.5vw; color: white; font-size: 25px;">
+        <i class="devicon-github-original"></i>
+        <i class="devicon-linkedin-plain"></i>
     </footer>
     
 </body>
