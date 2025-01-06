@@ -15,7 +15,7 @@ body{
 .header{
     background-color: rgb(37,37,37);
     height: 6vh;
-    width: 20vw;
+    width: 400px;
     border-bottom: 2px solid #DD1C1A;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px;
@@ -48,7 +48,7 @@ body{
 .footer{
     background-color: rgb(37,37,37);
     height: 6vh;
-    width: 20vw;
+    width: 400px;
     border-top: 2px solid #DD1C1A;
     border-top: 2px solid #DD1C1A;
     border-top-left-radius: 10px;
