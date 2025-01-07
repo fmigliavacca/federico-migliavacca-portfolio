@@ -175,3 +175,15 @@ transform: translateY(0);
 i:active{
     color: #DD1C1A;
 }
+
+.about-div{
+    background-image: url("/resources/layered-waves-haikei.svg");
+    width: 1200px;
+    height: 700px;
+    border: solid white 4px;
+    border-radius: 10px;
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+}
+
