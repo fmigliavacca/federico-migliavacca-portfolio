@@ -13,25 +13,25 @@
     <header class="header flex row" style="justify-content: center; align-items: center; position: fixed;">
         <div class="header-nav" style="font-size: 15px;">
             
-            <div class="">
+            <div class="nav-elem">
                 <a onclick="location.href='#experience'" class="text bold">Experience</a>
             </div>
-            <div>
+            <div class="nav-elem">
                 <a onclick="location.href='#projects'" class="text bold">Projects</a>
             </div>
-            <div>
+            <div class="nav-elem">
                 <a onclick="location.href='#stack'" class="text bold">Stack</a>
             </div>
-            <div class=>
+            <div class="nav-elem">
                 <a onclick="location.href='#about'" class="text bold">About</a>
             </div>
-            <div>
+            <div class="nav-elem">
                 <a onclick="location.href='#contact'" class="text bold">Contact</a>
             </div>
         </div>
     </header>
     <main class="main flex column" style="justify-content: start; align-items:start; gap: 100px;">
-        <section id="index" class="inicio flex column" style="justify-content: center; align-items: start; gap: 0px;">
+        <section id="index" class="inicio flex column hidden-section" style="justify-content: center; align-items: start; gap: 0px; margin-bottom: 270px;">
             <div class="flex row" style="justify-content: center; align-items: end; gap: 30px;">
                 <img src="resources/avatar.png" alt="" style="height: auto; width: 100px; border: #DD1C1A solid 3px ;border-radius: 60px; position: relative; top: 5px;">
                 <button class="text" style="width: 150px; height: 30px; font-size: 20px; background-color: rgb(37,37,37); border: #DD1C1A solid 2px; border-radius: 6px;">
@@ -57,7 +57,7 @@
                 </button></a>
             </div>
         </section>
-        <section id="experience" class="Experience flex column" style="justify-content: center; align-items: start;">
+        <section id="experience" class="Experience flex column hidden-section" style="justify-content: center; align-items: start;">
             <h2 style="color: white; font-size: 40px;">Experience</h2>
             <div class="flex row difuminado" style="justify-content: start; align-items: center; gap: 30px; width: 800px; padding: 30px;">
                 <div class="flex column" style="justify-content: center; align-items: center;">
@@ -67,7 +67,7 @@
 
                 </div>
                 <div>
-                    <div class="flex column bold" style="gap: 5px; padding: 0px; margin: 0px;">
+                    <div class="flex column bold hidden-section" style="gap: 5px; padding: 0px; margin: 0px;">
                         <h3 style="padding: 0px; margin: 0px; font-size: 35px; color: #DD1C1A;">Full Stack Developer</h3>
                         <h4 style="padding: 0px; margin: 0px; font-size: 25px; color: black;">Dyna Group S.A.</h4>
                         <h5 style="padding: 0px; margin: 0px; font-size: 20px; color: white;">Dec 2024 - Present</h5>
@@ -78,10 +78,10 @@
                 </div>
             </div>
         </section>
-        <section id="projects" class="Projects">
+        <section id="projects" class="Projects hidden-section">
             <h2 style="color: white; font-size: 40px;">Projects</h2>
             <div>
-                <div class="flex column" style="height: 60vh; width: 70vw; background-color: rgb(37,37,37); border: solid 3px #DD1C1A; border-radius: 10px; justify-content: start; align-items: start; padding: 40px; gap: 30px;">
+                <div class="flex column hidden-section" style="height: 60vh; width: 70vw; background-color: rgb(37,37,37); border: solid 3px #DD1C1A; border-radius: 10px; justify-content: start; align-items: start; padding: 40px; gap: 30px;">
                     <div class="flex row" style="justify-content: start; align-items: center; gap: 10px;">
                         <h3 class="bold" style="font-size: 30px; color: white; margin: 0px;">Operating System Emulator in C Language</h3>
                         <a href="https://github.com/fmigliavacca/Operating-System-Emulator-in-C-Language"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 30px; color:white">
@@ -111,9 +111,9 @@
 
 
         </section>
-        <section id="stack" class="Stack">
+        <section id="stack" class="Stack hidden-section">
             <h2 style="color: white; font-size: 40px;">Stack</h2>
-            <div class="flex column" style="margin-top: 80px; justify-content: center; align-items: center;">
+            <div class="flex column hidden-section" style="margin-top: 80px; justify-content: center; align-items: center;">
                 <h3 class="text bold" style="font-size: 25px;">Front End</h3>
                 <div class="flex row" style="justify-content: center; align-items: center; gap: 18px; flex-wrap: nowrap;">                
                     <div class="card-tech">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex column" style="margin-top: 80px; justify-content: center; align-items: center;">
+            <div class="flex column hidden-section" style="margin-top: 80px; justify-content: center; align-items: center;">
                 <h3 class="text bold" style="font-size: 25px;">Back End</h3>
                 <div class="flex row" style="justify-content: center; align-items: center; gap: 18px; flex-wrap: nowrap;">                
                     <div class="card-tech">
@@ -193,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex column" style="margin-top: 80px; justify-content: center; align-items: center;">
+            <div class="flex column hidden-section" style="margin-top: 80px; justify-content: center; align-items: center;">
                 <h3 class="text bold" style="font-size: 25px;">Other technologies</h3>
                 <div class="flex row" style="justify-content: center; align-items: center; gap: 18px; flex-wrap: nowrap;">                
                     <div class="round-tech">
@@ -232,12 +232,12 @@
 
 
         </section>
-        <section id="about" class="About">
+        <section id="about" class="About hidden-section">
             <h2 style="color: white; font-size: 40px;">About</h2>
 
 
         </section>
-        <section id="contact" class="Contact">
+        <section id="contact" class="Contact hidden-section">
             <h2 style="color: white; font-size: 40px;">Contact</h2>
 
 
