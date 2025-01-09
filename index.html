@@ -251,8 +251,8 @@
                 </div>
               
                 <form id="contact-form" class="contact-form">
-                  <label for="name">Your Name:</label>
-                  <input type="text" id="name" name="name" required placeholder="Enter your name">
+                  <label for="name">Your email:</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your email">
               
                   <label for="message">Your Message:</label>
                   <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
@@ -271,5 +271,11 @@
         <a href="https://www.linkedin.com/in/federico-migliavacca-689355243/"><i style="color: white" class="devicon-linkedin-plain"></i></a>
     </footer>
     <script src="javascript/main.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init('OQAt7qwDGK1ymtTAL');
+
+    </script>
+
 </body>
 </html>
